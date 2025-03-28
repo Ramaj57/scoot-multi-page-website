@@ -1,57 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-:root{
---btnBgColor:#FCB72B;
---btnColor:#FFFFFF;
---headingColor:#495567;
---paragraphColor:#939CAA;
---footer:#333A44;
---mobile-locations-activeFaq:#FFF4DF;
---semicicleColor:#E5ECF4;
+:root {
+  --btnBgColor: #fcb72b;
+  --btnColor: #ffffff;
+  --headingColor: #495567;
+  --paragraphColor: #939caa;
+  --footer: #333a44;
+  --mobile-locations-activeFaq: #fff4df;
+  --semicicleColor: #e5ecf4;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p{
-    font-family:"Lexend Deca", sans-serif;
-    font-size:15px ;
-    font-weight:400;
-    line-height: 25px;
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--paragraphColor);
 }
 
-h1{
-    font-family:"Space Mono", monospace;
-    font-size:56px ;
-    font-weight:700;
-    line-height: 56px;
-    letter-spacing: -2.5ch;
+h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5ch;
+  color: var(--headingColor);
 }
 
-h2{
-    font-family:"Space Mono", monospace;
-    font-size:48px ;
-    font-weight:700;
-    line-height: 48px;
-    letter-spacing: -2.14ch;
+h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.14ch;
+  color: var(--headingColor);
 }
 
-h3{
-    font-family:"Space Mono", monospace;
-    font-size:40px ;
-    font-weight:700;
-    line-height: 48px;
-    letter-spacing: -1.79ch;
+h3 {
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.79ch;
+  color: var(--headingColor);
 }
 
-h4{
-    font-family:"Space Mono", monospace;
-    font-size:24px ;
-    font-weight:700;
-    line-height: 28px;
-    letter-spacing: -1.07ch;
+h4 {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.07ch;
+  color: var(--headingColor);
 }
