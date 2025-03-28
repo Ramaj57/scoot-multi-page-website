@@ -1,0 +1,15 @@
+button {
+  color: var(--btnColor);
+  background-color: var(--btnBgColor);
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--btnBgColor);
+  background-color: transparent;
+  border: 1px solid var(--btnBgColor);
+}
