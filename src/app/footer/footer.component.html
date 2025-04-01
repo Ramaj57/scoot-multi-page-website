@@ -1,17 +1,24 @@
 <footer>
-    <!-- <div class="backgroundImg"></div> -->
   <div class="top">
     <h5>Sign up and Scoot off today</h5>
-      <button><img src="assets\icons\app-store.svg" alt="apple store button" /></button>
-      <button><img src="assets\icons\google-play.svg" alt="googleplay button" /></button>
-    </div>
-    <div class="bottom">
-      <img src="assets\logo.svg" alt="scoot logo" class="scoot"/>
-      <nav>
-    <app-nav-links [inFooter]="true"/>
+    <button class="appleButton">
+      <img src="assets\icons\app-store.svg" alt="apple store button" />
+    </button>
+    <button class="googleButton">
+      <img src="assets\icons\google-play.svg" alt="googleplay button" />
+    </button>
+    <div class="filled-circle"></div>
+    <div class="empty-circle"></div>
+  </div>
+  <div class="bottom">
+    <img src="assets\logo.svg" alt="scoot logo" class="scoot" />
+    <nav>
+      <app-nav-links [inFooter]="true" />
     </nav>
-    <img src="assets\icons\facebook.svg" alt="Facebook logo" />
-    <img src="assets\icons\twitter.svg" alt="Twitter logo" />
-    <img src="assets\icons\instagram.svg" alt="Instagram logo" />
+    <div class="socialMedia">
+      <img src="assets\icons\facebook.svg" alt="Facebook logo" />
+      <img src="assets\icons\twitter.svg" alt="Twitter logo" />
+      <img src="assets\icons\instagram.svg" alt="Instagram logo" />
+    </div>
   </div>
 </footer>

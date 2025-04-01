@@ -1,0 +1,80 @@
+footer{
+    max-height:758px;
+}
+
+.filled-circle{
+background-color: red;
+position:absolute;
+top:147px;
+left:197px;
+border-radius:50%;
+height:347px;
+width:347px;
+}
+
+.empty-circle{
+background-color:transparent;
+border:15px solid blue;
+position:absolute;
+left:-215px;
+top:147px;
+border-radius:50%;
+height:347px;
+width:347px;
+overflow: hidden;
+}
+
+.top{
+    background-color:var(--headingColor); 
+    text-align: center;
+    height:320px;
+    padding-top:88px;  
+     
+}
+
+h5{
+    color:var(--btnColor);
+    margin-bottom:40px;
+}
+
+button{
+    border-radius:4px;
+    border:none;    
+}
+
+button img{
+      height:40px;  
+}
+
+.appleButton{
+width:114px;
+margin-right:12px;
+}
+
+.googleButton{
+    width:130px;
+    
+}
+
+
+.bottom{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: var(--footer);
+    height:438px;
+    z-index: -1;
+}
+
+.scoot{
+margin:64px 0 41.44px 0;
+filter:brightness(100);
+}
+
+nav{
+margin-bottom:85px;
+}
+
+.socialMedia img{
+margin: 0 24px 0 0;
+}
