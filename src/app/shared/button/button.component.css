@@ -6,6 +6,9 @@ button {
   font-weight: 700;
   line-height: 25px;
   cursor: pointer;
+  border:none;
+  width:180px;
+  height:53px;
 }
 
 button:hover {
