@@ -1,6 +1,6 @@
 a {
   color: var(--paragraphColor);
-  margin-right: 32px;
+  margin-right: 2rem;
   text-decoration: none;
   cursor: pointer;
 }
