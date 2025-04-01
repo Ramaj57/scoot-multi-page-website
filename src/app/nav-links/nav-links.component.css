@@ -1,0 +1,10 @@
+a {
+  color: var(--paragraphColor);
+  margin-right: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--btnBgColor);
+}
