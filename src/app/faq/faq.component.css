@@ -1,0 +1,7 @@
+/* p{
+    display:none;
+} */
+/* give p the open class when i click the img which will be a chevron */
+p.open{
+    display:block;
+}
