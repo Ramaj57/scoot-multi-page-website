@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from "../shared/button/button.component";
+import { NavLinksComponent } from "../nav-links/nav-links.component";
 
 @Component({
   selector: 'app-footer',
-  imports: [ButtonComponent],
+  imports: [NavLinksComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })

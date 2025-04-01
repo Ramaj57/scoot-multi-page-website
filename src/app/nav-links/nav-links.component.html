@@ -1,4 +1,4 @@
-<nav>
+<nav [ngClass]="orientation()">
   @for(link of links; track link){
   <a href="">{{ link }}</a>
   }

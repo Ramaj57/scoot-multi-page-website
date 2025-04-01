@@ -1,14 +1,17 @@
 <footer>
-    <div class="top">
+    <!-- <div class="backgroundImg"></div> -->
+  <div class="top">
     <h5>Sign up and Scoot off today</h5>
-    <app-button/>
-    <app-button/>
+      <button><img src="assets\icons\app-store.svg" alt="apple store button" /></button>
+      <button><img src="assets\icons\google-play.svg" alt="googleplay button" /></button>
     </div>
     <div class="bottom">
-        <img src="" alt="scoot logo">
-        <p></p>
-        <img src="" alt="Facebook logo">
-        <img src="" alt="Twitter logo">
-        <img src="" alt="Instagram logo">
-    </div>
+      <img src="assets\logo.svg" alt="scoot logo" />
+      <nav>
+    <app-nav-links [inFooter]="true"/>
+    </nav>
+    <img src="" alt="Facebook logo" />
+    <img src="" alt="Twitter logo" />
+    <img src="" alt="Instagram logo" />
+  </div>
 </footer>

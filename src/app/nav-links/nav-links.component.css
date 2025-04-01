@@ -1,3 +1,13 @@
+nav.header{
+    display:flex;
+    flex-direction: row;
+}
+
+nav.footer{
+    display:flex;
+    flex-direction: column;
+}
+
 a {
   color: var(--paragraphColor);
   margin-right: 2rem;
