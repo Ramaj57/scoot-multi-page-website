@@ -1,16 +1,23 @@
-nav.header{
-    display:flex;
-    flex-direction: row;
+nav.header {
+  display: flex;
+  flex-direction: row;
 }
 
-nav.footer{
-    display:flex;
-    flex-direction: column;
+nav.header a {
+  margin-right: 2rem;
+}
+
+nav.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.footer a {
+  margin: 1rem;
 }
 
 a {
   color: var(--paragraphColor);
-  margin-right: 2rem;
   text-decoration: none;
   cursor: pointer;
 }
