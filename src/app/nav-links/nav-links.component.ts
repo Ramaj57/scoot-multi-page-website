@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
+import { navLinks } from '../Data';
 
-const navLinks = ['About', 'Locations', 'Careers'];
 
 @Component({
   selector: 'app-nav-links',
@@ -11,8 +11,8 @@ const navLinks = ['About', 'Locations', 'Careers'];
 })
 export class NavLinksComponent {
   links = navLinks;
-  inFooter = input<boolean>();
+  isInFooter = input<boolean>();
   orientation = computed(() =>{
-    return this.inFooter() ? 'footer' : 'header';
+    return this.isInFooter() ? 'footer' : 'header';
   })
 }

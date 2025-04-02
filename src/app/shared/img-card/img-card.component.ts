@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-img-card',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './img-card.component.css'
 })
 export class ImgCardComponent {
-
+ src = input<string>('');
+alt = input<string>('');
+heading = input<string>('');
+content = input<string>('');
+lineSrc = input<string>('');
+lineAlt = input<string>('');
 }

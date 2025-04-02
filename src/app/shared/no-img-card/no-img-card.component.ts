@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-no-img-card',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './no-img-card.component.css'
 })
 export class NoImgCardComponent {
-
+  heading = input<string>('');
+  content = input<string>('');
 }

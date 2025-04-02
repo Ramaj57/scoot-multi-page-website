@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faQuestions } from '../Data';
 
 @Component({
   selector: 'app-faq',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './faq.component.css'
 })
 export class FaqComponent {
-
+  faqs = faQuestions;
 }
