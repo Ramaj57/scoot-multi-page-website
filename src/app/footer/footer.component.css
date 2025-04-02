@@ -1,80 +1,160 @@
-footer{
-    max-height:758px;
+footer {
+  height: 758px;
+  overflow: hidden;
 }
 
-.filled-circle{
-background-color: red;
-position:absolute;
-top:147px;
-left:197px;
-border-radius:50%;
-height:347px;
-width:347px;
+.top {
+  position: relative;
+  background-color: var(--headingColor);
+  text-align: center;
+  height: 320px;
+  padding-top: 88px;
+  z-index: 1;
 }
 
-.empty-circle{
-background-color:transparent;
-border:15px solid blue;
-position:absolute;
-left:-215px;
-top:147px;
-border-radius:50%;
-height:347px;
-width:347px;
-overflow: hidden;
+h5 {
+  color: var(--btnColor);
+  margin-bottom: 40px;
 }
 
-.top{
-    background-color:var(--headingColor); 
-    text-align: center;
-    height:320px;
-    padding-top:88px;  
-     
+button {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
-h5{
-    color:var(--btnColor);
-    margin-bottom:40px;
+button img {
+  height: 40px;
 }
 
-button{
-    border-radius:4px;
-    border:none;    
+.appleButton {
+  width: 114px;
+  margin-right: 12px;
 }
 
-button img{
-      height:40px;  
+.googleButton {
+  width: 130px;
 }
 
-.appleButton{
-width:114px;
-margin-right:12px;
+.test-img {
+  position: relative;
+  right: 610px;
+  bottom: 50px;
+  height: 347px;
+  width: 1153px;
+  opacity: 10%;
 }
 
-.googleButton{
-    width:130px;
-    
+.bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--footer);
+  height: 438px;
+  z-index: 2;
 }
 
-
-.bottom{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    background-color: var(--footer);
-    height:438px;
-    z-index: -1;
+.scoot {
+  margin: 64px 0 41.44px 0;
+  filter: brightness(100);
 }
 
-.scoot{
-margin:64px 0 41.44px 0;
-filter:brightness(100);
+nav {
+  margin-bottom: 85px;
 }
 
-nav{
-margin-bottom:85px;
+.tblt-dskt-footer {
+  display: none;
 }
 
-.socialMedia img{
-margin: 0 24px 0 0;
+.socialMedia img {
+  margin: 0 24px 0 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 396px;
+    overflow: hidden;
+  }
+
+  .top {
+    height: 300px;
+    padding-top: 62px;
+  }
+
+  .test-img {
+    right: 210px;
+    bottom: 30px;
+  }
+
+  .bottom {
+    flex-direction: row;
+    height: 96px;
+  }
+
+  .scoot {
+    margin: 0 60px 0 40px;
+  }
+
+  nav {
+    margin-bottom: 0px;
+    margin-right: 153px;
+  }
+
+  .mobile-footer {
+    display: none;
+  }
+
+  .tblt-dskt-footer {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top {
+    display: flex;
+    overflow: scroll;
+    height: 300px;
+    padding-top: 102px;
+  }
+
+  h5 {
+    margin: 0 336px 0 165px;
+  }
+
+  button {
+    height: 56px;
+  }
+
+  button img {
+    height: 56px;
+  }
+
+  .appleButton {
+    width: 159px;
+    margin-right: 18px;
+  }
+
+  .googleButton {
+    width: 182px;
+  }
+
+  .test-img {
+    right: 450px;
+    bottom: -40px;
+  }
+
+  .scoot {
+    margin: 0 60px 0 169px;
+  }
+
+  nav {
+    margin-right: 571px;
+  }
+
+  .socialMedia img:hover {
+    filter: brightness(100);
+  }
 }

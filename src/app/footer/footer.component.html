@@ -7,16 +7,16 @@
     <button class="googleButton">
       <img src="assets\icons\google-play.svg" alt="googleplay button" />
     </button>
-    <div class="filled-circle"></div>
-    <div class="empty-circle"></div>
+    <img src="assets\patterns\white-circles.svg" alt="" class="test-img" />
   </div>
   <div class="bottom">
     <img src="assets\logo.svg" alt="scoot logo" class="scoot" />
     <nav>
-      <app-nav-links [inFooter]="true" />
+      <app-nav-links [inFooter]="true" class="mobile-footer" />
+      <app-nav-links [inFooter]="false" class="tblt-dskt-footer" />
     </nav>
     <div class="socialMedia">
-      <img src="assets\icons\facebook.svg" alt="Facebook logo" />
+      <img src="assets\icons\facebook.svg" alt="Facebook logo" class="facebook"/>
       <img src="assets\icons\twitter.svg" alt="Twitter logo" />
       <img src="assets\icons\instagram.svg" alt="Instagram logo" />
     </div>
