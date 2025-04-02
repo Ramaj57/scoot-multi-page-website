@@ -4,9 +4,12 @@
 <app-img-card/>
 <app-button/>
 <h2>Why join us?</h2>
-<app-numbered-img-card/>
+@for(card of numCard; track card.heading){
+    <app-numbered-img-card [src]="card.image.src" [alt]="card.image.alt" [heading]="card.heading" [content]="card.content" [number]="card.number"/>
+}
 <div class="careers">
-    <h4></h4>
-    <p></p>
+    @for(card of noCard; track card.job){
+<app-no-img-card [heading]="card.job" [content]="card.site"/>
+    }
     <app-button/>
 </div>

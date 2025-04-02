@@ -1,5 +1,10 @@
 <div class="pageTitle">Locations <img src="" alt="3 circles"></div>
 <img src="" alt="world map">
-<div class="cities">New York</div>
-<app-no-img-card/>
+<div class="cities">
+    @for(location of locations;track location[0]){
+        {{location}}
+    }
+</div>
+<app-no-img-card [heading]="noCard.heading" [content]="noCard.content"/>
+
 <app-button/>

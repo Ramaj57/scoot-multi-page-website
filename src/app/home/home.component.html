@@ -1,16 +1,17 @@
 <div class="scooter-sharing">
-    <app-no-img-card/>
+    <app-no-img-card [heading]="noCard.heading" [content]="noCard.content"/>
     <app-button/>
-    <img src="" alt="yellow arrow to the right">
-    <img src="" alt="3 circles">
+    <img src="assets\patterns\right-arrow.svg" alt="yellow arrow to the right">
+    <img src="assets\patterns\white-circles.svg" alt="3 circles">
 </div>
-<app-img-card/>
-<img src="" alt="yellow arrow down and to the left">
-<app-img-card/>
-<app-button/>
-<img src="" alt="yellow arrow down and to the right">
-<app-img-card/>
-<app-button/>
-<img src="" alt="yellow arrow down and to the left">
-<app-img-card/>
-<app-button/>
+@for(card of icCard; track card.heading){
+    <app-icon-card [heading]="card.heading" [content]="card.content" [src]="card.image.src"/>
+}
+<div>
+@for(card of imCard; track card.heading){
+ 
+<app-img-card [heading]="card.heading" [content]="card.content" [src]="card.image.src" [alt]="card.image.alt" [lineSrc]="card.line.src" [lineAlt]="card.line.alt"/>
+<app-button />
+}
+</div>
+ 
