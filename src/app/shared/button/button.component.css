@@ -1,4 +1,5 @@
 button {
+  display:block;
   color: var(--btnColor);
   background-color: var(--btnBgColor);
   font-family: "Space Mono", monospace;
