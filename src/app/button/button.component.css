@@ -1,0 +1,34 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: block;
+  color: var(--btnColor);
+  background-color: var(--btnBgColor);
+  cursor: pointer;
+  border: none;
+  width: 11.25rem;
+  height: 3.31rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.938rem;
+  font-weight: 700;
+  line-height: 1.56rem;
+}
+
+button:hover {
+  color: var(--btnBgColor);
+  background-color: transparent;
+  border: 0.25rem solid var(--btnBgColor);
+}
+
+p {
+  color: var(--btnColor);
+}
+
+@media (min-width: 90rem) {
+  .center {
+    justify-content: start;
+  }
+}

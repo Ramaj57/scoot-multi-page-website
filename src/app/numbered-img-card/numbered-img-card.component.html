@@ -1,0 +1,18 @@
+<div class="center">
+  <h1 class="seventh title">{{ title() }}</h1>
+</div>
+<div class="container">
+  @for (card of numCard; track card.number){
+  <div class="loop-container">
+    <img [src]="card.image.src" [alt]="card.image.alt" />
+    <div class="number fourth">{{ card.number }}</div>
+    <h2 class="num-heading fourth">{{ card.heading }}</h2>
+    <p
+      class="num-content"
+      [ngStyle]="{ 'margin-bottom': !$last ? '3.5rem' : null }"
+    >
+      {{ card.content }}
+    </p>
+  </div>
+  }
+</div>

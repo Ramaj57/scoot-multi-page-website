@@ -1,0 +1,42 @@
+.images-reverse {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.better-living.arrow {
+  top: -0.625rem;
+  right: 0.625rem;
+}
+
+@media (min-width: 48rem) {
+  .images-reverse {
+    right: 14.06rem;
+  }
+
+  .better-living.arrow {
+    right: 20rem;
+    top: 0.625rem;
+  }
+
+  .picture {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .flex-container {
+    flex-direction: row;
+  }
+  .images-reverse {
+    right: 20.625rem;
+  }
+
+  .text-reverse {
+    position: absolute;
+    right: 0;
+    padding-right: 10.3rem;
+    margin-left: 51.875rem;
+  }
+}

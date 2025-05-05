@@ -1,0 +1,62 @@
+.page-container {
+  overflow: hidden;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+  background-image: url("/assets/images/about-hero-mobile.jpg");
+  background-size: cover;
+  margin-bottom: 4.5rem;
+}
+
+.title {
+  color: var(--btnColor);
+}
+
+.about-circles {
+  display: none;
+}
+
+.bottom-container {
+  overflow: hidden;
+}
+
+.card {
+  margin-bottom: 7.5rem;
+}
+
+@media (min-width: 48rem) {
+  .pageTitle {
+    justify-content: space-between;
+    background-image: url("/assets/images/about-hero-tablet.jpg");
+    margin-bottom: 9rem;
+  }
+
+  .title {
+    margin-left: 6.06rem;
+  }
+
+  .about-circles {
+    position: relative;
+    left: 1.875rem;
+    display: block;
+  }
+}
+
+@media (min-width: 90rem) {
+  .pageTitle {
+    background-image: url("/assets/images/about-hero-desktop.jpg");
+    margin-bottom: 7.5rem;
+  }
+
+  .title {
+    margin-left: 10.31rem;
+  }
+
+  .faqs-card {
+    margin-bottom: 10rem;
+  }
+}

@@ -1,4 +1,9 @@
-<app-header/>
-<router-outlet />
-<app-about/>
-<app-footer/>
+<app-header />
+<div
+  class="shader"
+  [ngClass]="{ darken: isActive() }"
+  (click)="onCloseMobileMenu()"
+>
+  <router-outlet />
+</div>
+<app-footer />

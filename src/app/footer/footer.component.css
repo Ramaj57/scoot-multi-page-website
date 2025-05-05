@@ -1,47 +1,43 @@
 footer {
-  height: 758px;
+  height: 47.4rem;
   overflow: hidden;
 }
 
 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   background-color: var(--headingColor);
   text-align: center;
-  height: 320px;
-  padding-top: 88px;
-  z-index: 1;
+  height: 20rem;
 }
 
-h5 {
+.scoot-today {
   color: var(--btnColor);
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
 }
 
 button {
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: none;
   cursor: pointer;
 }
 
 button img {
-  height: 40px;
+  height: 3rem;
 }
 
 .appleButton {
-  width: 114px;
-  margin-right: 12px;
+  margin-right: 0.8rem;
 }
 
-.googleButton {
-  width: 130px;
-}
-
-.test-img {
-  position: relative;
-  right: 610px;
-  bottom: 50px;
-  height: 347px;
-  width: 1153px;
+.background-circles {
+  position: absolute;
+  right: -10.8rem;
+  top: 9.4rem;
+  height: 21.7rem;
+  width: 72rem;
   opacity: 10%;
 }
 
@@ -50,18 +46,18 @@ button img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   background-color: var(--footer);
-  height: 438px;
-  z-index: 2;
+  height: 27.4rem;
 }
 
 .scoot {
-  margin: 64px 0 41.44px 0;
+  margin: 4rem 0 2.6rem 0;
   filter: brightness(100);
 }
 
 nav {
-  margin-bottom: 85px;
+  margin-bottom: 5.3rem;
 }
 
 .tblt-dskt-footer {
@@ -69,38 +65,41 @@ nav {
 }
 
 .socialMedia img {
-  margin: 0 24px 0 0;
+  margin: 0 1.5rem 0 0;
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   footer {
-    height: 396px;
-    overflow: hidden;
+    height: 24.75rem;
   }
 
   .top {
-    height: 300px;
-    padding-top: 62px;
+    align-items: center;
+    height: 18.75rem;
   }
 
-  .test-img {
-    right: 210px;
-    bottom: 30px;
+  .scoot-today {
+    padding: 0 9.75rem;
+  }
+
+  .background-circles {
+    right: -10.8rem;
+    top: 8.75rem;
   }
 
   .bottom {
     flex-direction: row;
-    height: 96px;
+    height: 6rem;
   }
 
   .scoot {
-    margin: 0 60px 0 40px;
+    margin: 0 3.7rem 0 2.5rem;
   }
 
   nav {
-    margin-bottom: 0px;
-    margin-right: 153px;
+    margin-bottom: 0;
+    margin-right: 9.5rem;
   }
 
   .mobile-footer {
@@ -112,46 +111,33 @@ nav {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .top {
-    display: flex;
-    overflow: scroll;
-    height: 300px;
-    padding-top: 102px;
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
   }
 
-  h5 {
-    margin: 0 336px 0 165px;
-  }
-
-  button {
-    height: 56px;
+  .scoot-today {
+    width: 25.9rem;
+    padding: 0;
+    margin: 0 22.5rem 0 10.3rem;
   }
 
   button img {
-    height: 56px;
+    height: 4rem;
   }
 
   .appleButton {
-    width: 159px;
-    margin-right: 18px;
-  }
-
-  .googleButton {
-    width: 182px;
-  }
-
-  .test-img {
-    right: 450px;
-    bottom: -40px;
+    margin-right: 1.1rem;
   }
 
   .scoot {
-    margin: 0 60px 0 169px;
+    margin: 0 3.75rem 0 10.6rem;
   }
 
   nav {
-    margin-right: 571px;
+    margin-right: 35.7rem;
   }
 
   .socialMedia img:hover {

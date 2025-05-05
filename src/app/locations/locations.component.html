@@ -1,10 +1,29 @@
-<div class="pageTitle">Locations <img src="" alt="3 circles"></div>
-<img src="" alt="world map">
-<div class="cities">
-    @for(location of locations;track location[0]){
-        {{location}}
-    }
+<div class="page-container">
+  <div class="pageTitle">
+    <h1 class="fifth title">{{ location.title }}</h1>
+    <img
+      src="assets\patterns\white-circles.svg"
+      alt="3 circles"
+      class="location-circles"
+    />
+  </div>
+  <div class="container">
+    <div class="world-map">
+      @for(location of jobLocations;track location){
+      <div [className]="location.toLowerCase() + ' marker'">
+        <app-marker [location]="location" />
+      </div>
+      }
+    </div>
+    <div class="job-locations">
+      @for(location of jobLocations;track location){
+      <div class="cities">{{ location }}</div>
+      }
+    </div>
+    <div class="card">
+      <h2 class="heading seventh">{{ location.heading }}</h2>
+      <p class="content">{{ location.content }}</p>
+      <app-button [text]="buttonText()" />
+    </div>
+  </div>
 </div>
-<app-no-img-card [heading]="noCard.heading" [content]="noCard.content"/>
-
-<app-button/>

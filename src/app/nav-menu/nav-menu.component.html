@@ -1,0 +1,24 @@
+<menu class="mobile-menu" [class.active]="isActive()">
+  <a
+    routerLink="/About"
+    routerLinkActive="selected-mobile"
+    (click)="onCloseMobileMenu()"
+    class="about"
+    >{{ navLinks[0] }}</a
+  >
+  <a
+    routerLink="/Location"
+    routerLinkActive="selected-mobile"
+    (click)="onCloseMobileMenu()"
+    class="location"
+    >{{ navLinks[1] }}</a
+  >
+  <a
+    routerLink="/Careers"
+    routerLinkActive="selected-mobile"
+    (click)="onCloseMobileMenu()"
+    class="careers"
+    >{{ navLinks[2] }}</a
+  >
+  <app-button [text]="buttonText()" />
+</menu>

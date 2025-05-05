@@ -1,0 +1,178 @@
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40.625rem;
+  background-image: url("/assets/images/home-hero-mobile.jpg");
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-heading,
+.home-content {
+  color: var(--btnColor);
+  padding: 0 2rem;
+}
+
+.home-heading {
+  margin: 7.188rem 0 1.5rem 0;
+}
+
+.line1 {
+  display: none;
+}
+
+.home-content {
+  margin-bottom: 2.125rem;
+}
+
+.arrow-scooter {
+  position: absolute;
+  top: 33.375rem;
+  right: 14.375rem;
+}
+
+.home-circles {
+  display: none;
+}
+
+.bottom-container {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 7.5rem;
+}
+
+.line2 {
+  display: none;
+}
+
+.card {
+  margin-bottom: 7.5rem;
+}
+
+.telemetry-card {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 48rem) {
+  .top-container {
+    position: relative;
+    background-image: url("/assets/images/home-hero-tablet.jpg");
+  }
+
+  .home-heading,
+  .home-content {
+    padding: 0 6.06rem;
+  }
+
+  .home-heading {
+    margin: 8.56rem 0 1.5rem 0;
+  }
+
+  .arrow-scooter {
+    top: 28.688rem;
+    right: 26.875rem;
+  }
+
+  .home-circles {
+    height: 3.938rem;
+    display: block;
+    position: absolute;
+    bottom: 2.81rem;
+    right: -1.938rem;
+  }
+
+  .line2 {
+    width: 0.938rem;
+    height: 32rem;
+    display: block;
+    position: absolute;
+    left: 8.56rem;
+    top: 46.625rem;
+    background-color: var(--semicircleColor);
+  }
+
+  .icons {
+    margin-left: 6.06rem;
+  }
+
+  .card {
+    margin-bottom: 8rem;
+  }
+
+  .telemetry-card {
+    margin-top: 9.06rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .top-container {
+    align-items: flex-start;
+    background-image: url("/assets/images/home-hero-desktop.jpg");
+    text-align: left;
+  }
+
+  .topBtn,
+  .home-content {
+    margin-left: 16.25rem;
+  }
+
+  .home-heading,
+  .home-content {
+    padding: 0 48.438rem 0 0;
+  }
+
+  .home-heading {
+    margin: 9.56rem 0 2.5rem 10.3rem;
+  }
+
+  .line1 {
+    display: block;
+    position: absolute;
+    top: 22.125rem;
+  }
+
+  .home-content {
+    margin-bottom: 2.5rem;
+  }
+
+  .arrow-scooter {
+    position: absolute;
+    top: 22.125rem;
+    right: 17.5rem;
+  }
+
+  .home-circles {
+    height: 3.938rem;
+    display: block;
+    position: absolute;
+    top: 26.4rem;
+    right: -3.125rem;
+  }
+
+  .bottom-container {
+    margin-top: 10rem;
+  }
+
+  .line2 {
+    width: 60.875rem;
+    height: 0.938rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 59rem;
+    background-color: var(--semicircleColor);
+  }
+
+  .icons {
+    margin-left: 10.3rem;
+  }
+
+  .card {
+    margin-bottom: 10rem;
+  }
+
+  .telemetry-card {
+    margin-top: 12.5rem;
+  }
+}

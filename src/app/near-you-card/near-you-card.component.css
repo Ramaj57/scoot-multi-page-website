@@ -1,0 +1,43 @@
+.images-reverse {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.near-you.line {
+  top: 0;
+  right: 5rem;
+}
+
+@media (min-width: 48rem) {
+  .images-reverse {
+    right: 14rem;
+  }
+
+  .near-you.line {
+    right: 20.6rem;
+    top: 0.625rem;
+  }
+
+  .picture {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .images-reverse {
+    right: 20.6rem;
+  }
+
+  .text-reverse {
+    position: absolute;
+    right: 0;
+    padding-right: 10.3rem;
+    margin-left: 51.9rem;
+  }
+}

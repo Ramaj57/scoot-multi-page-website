@@ -1,0 +1,11 @@
+.payments.arrow {
+  top: 0;
+  left: 7.2rem;
+}
+
+@media (min-width: 48rem) {
+  .payments.arrow {
+    top: 5rem;
+    left: 15.6rem;
+  }
+}

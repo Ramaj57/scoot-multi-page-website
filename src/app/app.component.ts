@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./header/header.component";
-import { FooterComponent } from "./footer/footer.component";
-import { AboutComponent } from "./about/about.component";
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { NgClass } from '@angular/common';
+import { MobileMenuService } from './mobileMenu.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, NgClass],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'scoot-multi-page-website';
+  mobileMenu = inject(MobileMenuService);
+  isActive = this.mobileMenu.isActive;
+  onCloseMobileMenu() {
+    this.mobileMenu.onCloseMobileMenu();
+  }
 }

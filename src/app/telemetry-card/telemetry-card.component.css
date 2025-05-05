@@ -1,0 +1,98 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.telemetry.arrow {
+  bottom: -0.31rem;
+  left: -0.19rem;
+}
+
+.circle {
+  display: none;
+}
+
+.picture {
+  height: 19.4rem;
+  width: 19.4rem;
+  border-radius: 50%;
+}
+
+.heading,
+.content {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 48rem) {
+  .images {
+    left: 16.06rem;
+    margin-bottom: 4rem;
+  }
+
+  .arrow {
+    position: absolute;
+  }
+
+  .telemetry.arrow {
+    left: -8.1rem;
+  }
+
+  .circle {
+    display: block;
+  }
+
+  .picture {
+    height: 27.8rem;
+    width: 27.8rem;
+    margin-right: 4rem;
+  }
+
+  .heading,
+  .content {
+    margin-bottom: 2.5rem;
+  }
+  .heading {
+    padding: 0 9.75rem;
+  }
+
+  .content {
+    padding: 0 6.1rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .flex-container {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .images {
+    left: 21.25rem;
+  }
+
+  .text {
+    position: absolute;
+    left: 10.3rem;
+    margin-bottom: 2rem;
+    padding-right: 51.9rem;
+  }
+
+  .heading,
+  .content {
+    text-align: left;
+    padding: 0;
+  }
+}

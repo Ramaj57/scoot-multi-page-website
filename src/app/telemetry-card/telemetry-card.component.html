@@ -1,0 +1,20 @@
+<div class="flex-container">
+  <div class="images">
+    <img
+      [src]="telemetry.arrow.src"
+      [alt]="telemetry.arrow.alt"
+      class="telemetry arrow"
+    />
+    <img src="assets\patterns\circle.svg" alt="alt" class="circle" />
+    <img
+      [src]="telemetry.image.src"
+      [alt]="telemetry.image.alt"
+      class="picture"
+    />
+  </div>
+  <div class="text">
+    <h1 class="seventh heading">{{ telemetry.heading }}</h1>
+    <p class="content">{{ telemetry.content }}</p>
+    <app-button [text]="buttonText()" />
+  </div>
+</div>

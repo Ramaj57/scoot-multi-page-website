@@ -1,24 +1,40 @@
 <footer>
   <div class="top">
-    <h5>Sign up and Scoot off today</h5>
-    <button class="appleButton">
-      <img src="assets\icons\app-store.svg" alt="apple store button" />
-    </button>
-    <button class="googleButton">
-      <img src="assets\icons\google-play.svg" alt="googleplay button" />
-    </button>
-    <img src="assets\patterns\white-circles.svg" alt="" class="test-img" />
+    <h5 class="seventh scoot-today">{{ footerText() }}</h5>
+    <div class="buttons">
+      <button class="appleButton">
+        <img src="assets\icons\app-store.svg" alt="apple store button" />
+      </button>
+      <button class="googleButton">
+        <img src="assets\icons\google-play.svg" alt="googleplay button" />
+      </button>
+    </div>
+    <img
+      src="assets\patterns\white-circles.svg"
+      alt=""
+      class="background-circles"
+    />
   </div>
   <div class="bottom">
-    <img src="assets\logo.svg" alt="scoot logo" class="scoot" />
+    <a [routerLink]="'/Home'" routerLinkActive="router-link-active"
+      ><img src="assets\logo.svg" alt="scoot logo" class="scoot"
+    /></a>
     <nav>
-      <app-nav-links [isInFooter]="true" class="mobile-footer" />
-      <app-nav-links [isInFooter]="false" class="tblt-dskt-footer" />
+      <app-nav-links [vertical]="true" class="mobile-footer" />
+      <app-nav-links [vertical]="false" class="tblt-dskt-footer" />
     </nav>
     <div class="socialMedia">
-      <img src="assets\icons\facebook.svg" alt="Facebook logo" class="facebook"/>
-      <img src="assets\icons\twitter.svg" alt="Twitter logo" />
-      <img src="assets\icons\instagram.svg" alt="Instagram logo" />
+      <img
+        src="assets\icons\facebook.svg"
+        alt="Facebook logo"
+        class="facebook"
+      />
+      <img src="assets\icons\twitter.svg" alt="Twitter logo" class="twitter" />
+      <img
+        src="assets\icons\instagram.svg"
+        alt="Instagram logo"
+        class="instagram"
+      />
     </div>
   </div>
 </footer>

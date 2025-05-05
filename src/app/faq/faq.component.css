@@ -1,7 +1,100 @@
-/* p{
-    display:none;
-} */
-/* give p the open class when i click the img which will be a chevron */
-p.open{
-    display:block;
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.desk-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subject {
+  margin-bottom: 2rem;
+}
+
+.question-container {
+  width: 19.4rem;
+  background-color: var(--faqBgColor);
+  margin-bottom: 1rem;
+  padding: 0 1.8rem 0 2rem;
+}
+
+.question-container.top:last-child {
+  margin-bottom: 3rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
+.chevron {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+p {
+  display: none;
+  color: var(--headingColor);
+  margin-bottom: 2rem;
+}
+
+.selected {
+  display: block;
+}
+
+.question-container.bottom:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48rem) {
+  .center {
+    margin-bottom: 4rem;
+  }
+
+  .question-container {
+    width: 43rem;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem 0 3rem;
+  }
+
+  .question-container.top:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .question-container.bottom {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .question-container {
+    width: 45.6rem;
+    min-height: 5.75rem;
+    margin: 0 0 1rem 30rem;
+  }
+
+  .subject {
+    position: absolute;
+  }
+
+  .subject.works {
+    left: 10.3rem;
+    top: 160.6rem;
+  }
+
+  .subject.safe {
+    left: 10.3rem;
+    top: 190rem;
+  }
 }

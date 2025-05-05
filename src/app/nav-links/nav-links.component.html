@@ -1,5 +1,7 @@
 <nav [ngClass]="orientation()">
-  @for(link of links; track link){
-  <a href="">{{ link }}</a>
+  @for(link of navLinks; track link){
+  <a [routerLink]="'/' + link" routerLinkActive="router-link-active">
+    <p>{{ link }}</p>
+  </a>
   }
 </nav>

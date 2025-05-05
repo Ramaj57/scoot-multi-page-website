@@ -1,0 +1,127 @@
+.page-container {
+  overflow: hidden;
+}
+
+.pageTitle {
+  height: 10rem;
+  background-image: url(/assets/images/careers-location-hero-mobile.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+.title {
+  color: var(--btnColor);
+}
+
+.career-circles {
+  display: none;
+}
+
+.bottom-container {
+  overflow: hidden;
+}
+
+.card {
+  margin-bottom: 7.5rem;
+}
+
+.career-choices {
+  margin-bottom: 7.5rem;
+}
+
+.careerOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--faqBgColor);
+  margin: 0 2rem 1rem 2rem;
+  padding: 2.25rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.job-title {
+  margin-bottom: 0.25rem;
+}
+
+.job-site {
+  margin-bottom: 1rem;
+  color: var(--headingColor);
+}
+
+button {
+  display: block;
+  color: var(--btnColor);
+  background-color: var(--btnBgColor);
+  cursor: pointer;
+  border: none;
+  width: 15.438rem;
+  height: 3.31rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.938rem;
+  font-weight: 700;
+  line-height: 1.56rem;
+}
+
+app-button {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .pageTitle {
+    height: 12.5rem;
+    background-image: url(/assets/images/careers-locations-hero-tablet.jpg);
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }
+
+  .title {
+    margin-left: 6.06rem;
+  }
+
+  .career-circles {
+    display: block;
+    position: relative;
+    left: 1.875rem;
+  }
+
+  .careerOptions {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2.5rem 1rem 2.5rem;
+    padding: 2.125rem 2rem 2.125rem 3rem;
+  }
+
+  .job-title,
+  .job-site {
+    text-align: left;
+  }
+
+  .job-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .job-site {
+    margin-bottom: 0;
+  }
+
+  button {
+    display: none;
+  }
+
+  app-button {
+    display: block;
+  }
+}
+
+@media (min-width: 90rem) {
+  .pageTitle {
+    background-image: url(/assets/images/careers-locations-hero-desktop.jpg);
+    margin-bottom: 7.5rem;
+  }
+
+  .title {
+    margin-left: 10.3rem;
+  }
+}

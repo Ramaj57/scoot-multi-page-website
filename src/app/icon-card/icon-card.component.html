@@ -1,3 +1,16 @@
-<img [src]="src()" [alt]="alt()">
-<h5>{{heading()}}</h5>
-<p>{{content()}}</p>
+<div class="outer">
+  @for(icon of icons;track icon.image.src){
+  <div class="icon-flex-container">
+    <img [src]="icon.image.src" [alt]="icon.image.alt" />
+    <div
+      class="icon-text"
+      [ngStyle]="{ 'margin-bottom': !$last ? '3rem' : null }"
+    >
+      <h4 class="sixth icon-heading">{{ icon.heading }}</h4>
+      <p>
+        {{ icon.content }}
+      </p>
+    </div>
+  </div>
+  }
+</div>

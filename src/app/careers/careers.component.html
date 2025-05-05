@@ -1,15 +1,30 @@
-<div class="pageTitle">Careers <img src="" alt="3 circles"></div>
-<img src="" alt="semiCirlce">
-<img src="" alt="yellow arrow to the left">
-<app-img-card/>
-<app-button/>
-<h2>Why join us?</h2>
-@for(card of numCard; track card.heading){
-    <app-numbered-img-card [src]="card.image.src" [alt]="card.image.alt" [heading]="card.heading" [content]="card.content" [number]="card.number"/>
-}
-<div class="careers">
-    @for(card of noCard; track card.job){
-<app-no-img-card [heading]="card.job" [content]="card.site"/>
-    }
-    <app-button/>
+<div class="page-container">
+  <div class="pageTitle">
+    <h1 class="fifth title">{{ career() }}</h1>
+    <img
+      src="assets\patterns\white-circles.svg"
+      alt="3 circles"
+      class="career-circles"
+    />
+  </div>
+  <div class="bottom-container">
+    <div class="joinUs-card card">
+      <app-join-us-card />
+    </div>
+    <div class="num-card card">
+      <app-numbered-img-card [title]="numImage()" />
+    </div>
+    <div class="career-choices">
+      @for (career of careerOptions;track career.job){
+      <div class="careerOptions">
+        <div class="seperator">
+          <h3 class="eigth job-title">{{ career.job }}</h3>
+          <p class="job-site">{{ career.site }}</p>
+        </div>
+        <button>{{ buttonText() }}</button>
+        <app-button [text]="buttonText()" />
+      </div>
+      }
+    </div>
+  </div>
 </div>

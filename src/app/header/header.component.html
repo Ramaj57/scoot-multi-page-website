@@ -1,10 +1,28 @@
 <header>
+  @if(isActive()){
   <img
-    src="assets\icons\hamburger.svg"
-    alt="hamburger menu"
-    class="hamburger"
+    src="assets/icons/close.svg"
+    alt=""
+    class="open-close"
+    (click)="onCloseMobileMenu()"
   />
-  <img src="assets\logo.svg" alt="Scoot logo" class="logo" />
-  <app-nav-links class="nav-links" [inFooter]="false" />
-  <app-button class="header-button" />
+  } @else {
+  <img
+    src="assets/icons/hamburger.svg"
+    alt="hamburger menu"
+    class="open-close"
+    (click)="onOpenMobileMenu()"
+  />
+  }
+
+  <a [routerLink]="'/Home'" routerLinkActive="router-link-active"
+    ><img
+      src="assets\logo.svg"
+      alt="Scoot logo"
+      class="logo"
+      (click)="onCloseMobileMenu()"
+  /></a>
+  <app-nav-links class="nav-links" [vertical]="false" />
+  <app-button class="header-button" [text]="buttonText()" />
+  <app-nav-menu />
 </header>

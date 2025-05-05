@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { NavLinksComponent } from "../nav-links/nav-links.component";
-import { buttonText } from '../Data';
+import { Component, signal } from '@angular/core';
+import { NavLinksComponent } from '../nav-links/nav-links.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [NavLinksComponent],
+  imports: [NavLinksComponent, RouterLink],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  btnText = buttonText;
+  footerText = signal<string>('Sign up and Scoot off today');
 }

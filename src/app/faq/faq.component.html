@@ -1,14 +1,39 @@
-<h5>FAQs</h5>
-<h4>How it works</h4>
-<div>
-<h6></h6>
-<img src="" alt="chevron">
-<p></p>
+<div class="center">
+  <h1 class="faq-title seventh">{{ faqs.title }}</h1>
 </div>
-<h4>Safe driving</h4>
-<div>
-    <h6></h6>
-    <img src="" alt="chevron">
-    <p></p>
+<div class="desk-flex">
+  <h2 class="fourth subject works">{{ faqs.worksTitle }}</h2>
+  @for(workQuestion of worksQuestions;track workQuestion; let i= $index){
+  <div class="question-container top" (click)="openWorkFaq(i)">
+    <div class="group">
+      <h4 class="question eigth">{{ workQuestion.question }}</h4>
+      <img src="assets\icons\chevron.svg" alt="chevron" class="chevron" />
+    </div>
+    <p class="answer" [ngClass]="{ selected: selectedIndex() === i }">
+      {{ workQuestion.answer }}
+    </p>
+  </div>
+  }
 </div>
-
+<div class="desk-flex">
+  <h2 class="fourth subject safe">
+    {{ faqs.safeTitle }}
+  </h2>
+  @for(safeQuestion of safeQuestions;track safeQuestion;let j = $index){
+  <div
+    class="question-container bottom"
+    (click)="openWorkFaq(j + safeQuestions.length)"
+  >
+    <div class="group">
+      <h4 class="question eigth">{{ safeQuestion.question }}</h4>
+      <img src="assets\icons\chevron.svg" alt="chevron" class="chevron" />
+    </div>
+    <p
+      class="answer"
+      [ngClass]="{ selected: selectedIndex() === j + worksQuestions.length }"
+    >
+      {{ safeQuestion.answer }}
+    </p>
+  </div>
+  }
+</div>

@@ -1,0 +1,20 @@
+<div class="flex-container">
+  <div class="images">
+    <img
+      [src]="payments.arrow.src"
+      [alt]="payments.arrow.alt"
+      class="payments arrow"
+    />
+    <img src="assets\patterns\circle.svg" alt="alt" class="circle" />
+    <img
+      [src]="payments.image.src"
+      [alt]="payments.image.alt"
+      class="picture"
+    />
+  </div>
+  <div class="text">
+    <h1 class="seventh heading">{{ payments.heading }}</h1>
+    <p class="content">{{ payments.content }}</p>
+    <app-button [text]="buttonText()" />
+  </div>
+</div>

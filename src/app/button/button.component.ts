@@ -4,8 +4,8 @@ import { Component, input } from '@angular/core';
   selector: 'app-button',
   imports: [],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  styleUrl: './button.component.css',
 })
 export class ButtonComponent {
-text = input<string>('');
+  text = input<string>('');
 }

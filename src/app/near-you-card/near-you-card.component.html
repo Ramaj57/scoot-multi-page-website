@@ -1,0 +1,16 @@
+<div class="flex-container">
+  <div class="images-reverse">
+    <img
+      [src]="nearYou.line.src"
+      [alt]="nearYou.line.alt"
+      class="near-you line"
+    />
+    <img src="assets\patterns\circle.svg" alt="alt" class="circle" />
+    <img [src]="nearYou.image.src" [alt]="nearYou.image.alt" class="picture" />
+  </div>
+  <div class="text-reverse">
+    <h1 class="seventh heading">{{ nearYou.heading }}</h1>
+    <p class="content">{{ nearYou.content }}</p>
+    <app-button [text]="buttonText()" />
+  </div>
+</div>

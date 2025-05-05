@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
-import { ImgCardComponent } from "../shared/img-card/img-card.component";
-import { NumberedImgCardComponent } from "../shared/numbered-img-card/numbered-img-card.component";
-import { FaqComponent } from "../faq/faq.component";
-import { imageCard, numberedImageCard } from '../Data';
+import { Component, signal } from '@angular/core';
+import { NumberedImgCardComponent } from '../numbered-img-card/numbered-img-card.component';
+import { FaqComponent } from '../faq/faq.component';
+import { DigitalEraCardComponent } from '../digital-era-card/digital-era-card.component';
+import { UrbanLivingCardComponent } from '../better-living-card/better-living-card.component';
 
 @Component({
   selector: 'app-about',
-  imports: [ImgCardComponent, NumberedImgCardComponent, FaqComponent],
+  imports: [
+    NumberedImgCardComponent,
+    FaqComponent,
+    DigitalEraCardComponent,
+    UrbanLivingCardComponent,
+  ],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
 })
 export class AboutComponent {
-imCard = imageCard;
-numCard = numberedImageCard;
+  about = signal<string>('About');
+  numImage = signal<string>('Our values');
 }

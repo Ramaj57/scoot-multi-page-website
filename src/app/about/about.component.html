@@ -1,12 +1,24 @@
-<div class="pageTitle">About <img src="" alt="3 circles"></div>
-<img src="" alt="semiCircle">
-<img src="" alt="Yellow arrow to the left">
-<app-img-card/>
-<img src="" alt="Yellow arrow to the right">
-<img src="" alt="semiCircle">
-<app-img-card/>
-<h2>Our values</h2>
-@for(card of numCard; track card.heading){
-    <app-numbered-img-card [src]="card.image.src" [alt]="card.image.alt" [heading]="card.heading" [content]="card.content" [number]="card.number"/>
-}
-<app-faq/>
+<div class="page-container">
+  <div class="pageTitle">
+    <h1 class="fifth title">{{ about() }}</h1>
+    <img
+      src="assets\patterns\white-circles.svg"
+      alt="3 circles"
+      class="about-circles"
+    />
+  </div>
+  <div class="bottom-container">
+    <div class="digital-Era-card card">
+      <app-digital-era-card />
+    </div>
+    <div class="better-living-card card">
+      <app-better-living-card />
+    </div>
+    <div class="numbered-card card">
+      <app-numbered-img-card [title]="numImage()" />
+    </div>
+    <div class="faqs-card card">
+      <app-faq />
+    </div>
+  </div>
+</div>

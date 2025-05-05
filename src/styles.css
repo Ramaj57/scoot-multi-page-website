@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-  --btnBgColor: #fcb72b;
+  --btnBgColor: #fcb72c;
   --btnColor: #ffffff;
   --headingColor: #495567;
   --paragraphColor: #939caa;
   --footer: #333a44;
   --mobile-locations-activeFaq: #fff4df;
-  --semicicleColor: #e5ecf4;
+  --semicircleColor: #e5ecf4;
+  --faqBgColor: #f2f5f9;
+  --locationBgColor: hsl(40, 97%, 58%, 15%);
 }
 
 * {
@@ -17,6 +19,7 @@
   box-sizing: border-box;
 }
 
+/* mobile */
 p {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
@@ -25,7 +28,7 @@ p {
   color: var(--paragraphColor);
 }
 
-h1 {
+.first {
   font-family: "Space Mono", monospace;
   font-size: 56px;
   font-weight: 700;
@@ -34,7 +37,7 @@ h1 {
   color: var(--headingColor);
 }
 
-h2 {
+.second {
   font-family: "Space Mono", monospace;
   font-size: 48px;
   font-weight: 700;
@@ -43,7 +46,7 @@ h2 {
   color: var(--headingColor);
 }
 
-h3 {
+.third {
   font-family: "Space Mono", monospace;
   font-size: 40px;
   font-weight: 700;
@@ -52,7 +55,7 @@ h3 {
   color: var(--headingColor);
 }
 
-h4 {
+.fourth {
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
@@ -61,3 +64,86 @@ h4 {
   color: var(--headingColor);
 }
 
+.fifth {
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1.79px;
+  color: var(--headingColor);
+}
+
+.sixth {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.89px;
+  color: var(--headingColor);
+}
+
+.seventh {
+  font-family: "Space Mono", monospace;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1.43px;
+  color: var(--headingColor);
+}
+
+.eigth {
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+  color: var(--headingColor);
+}
+
+/* tablet & desktop */
+@media (min-width: 768px) {
+  .fourth {
+    font-family: "Space Mono", monospace;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+    color: var(--headingColor);
+  }
+
+  .fifth {
+    font-family: "Space Mono", monospace;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: var(--headingColor);
+  }
+
+  .sixth {
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: var(--headingColor);
+  }
+
+  .seventh {
+    font-family: "Space Mono", monospace;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: var(--headingColor);
+  }
+
+  .eigth {
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: var(--headingColor);
+  }
+}

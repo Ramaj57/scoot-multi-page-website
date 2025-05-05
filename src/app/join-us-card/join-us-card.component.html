@@ -1,0 +1,12 @@
+<div class="flex-container">
+  <div class="images">
+    <img [src]="joinUs.arrow.src" [alt]="joinUs.arrow.alt" class="join-us arrow" />
+    <img src="assets\patterns\circle.svg" alt="alt" class="circle" />
+    <img [src]="joinUs.image.src" [alt]="joinUs.image.alt" class="picture" />
+  </div>
+  <div class="text">
+    <h1 class="seventh heading">{{ joinUs.heading }}</h1>
+    <p class="content">{{ joinUs.content }}</p>
+    <app-button [text]="buttonText()" />
+  </div>
+</div>

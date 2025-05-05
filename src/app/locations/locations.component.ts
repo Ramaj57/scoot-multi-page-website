@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { NoImgCardComponent } from "../shared/no-img-card/no-img-card.component";
-import { ButtonComponent } from "../shared/button/button.component";
-import { jobLocations, noImageCard } from '../Data';
+import { Component, signal } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
+import { MarkerComponent } from './marker/marker.component';
 
 @Component({
   selector: 'app-locations',
-  imports: [NoImgCardComponent, ButtonComponent],
+  imports: [ButtonComponent, MarkerComponent],
   templateUrl: './locations.component.html',
-  styleUrl: './locations.component.css'
+  styleUrl: './locations.component.css',
 })
 export class LocationsComponent {
-noCard = noImageCard[0].Locations;
-locations = jobLocations;
+  jobLocations = ['New York', 'London', 'Jakarta', 'Yokohama'];
+  locationPage = {
+    title: 'Locations',
+    heading: 'Your city not listed?',
+    content:
+      'If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.',
+  };
+  location = this.locationPage;
+  buttonText = signal<string>('Message us');
 }

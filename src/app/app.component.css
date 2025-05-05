@@ -1,0 +1,9 @@
+.darken::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 0.75;
+  margin: 4rem 0 0 16.4rem;
+  z-index: 1;
+}
